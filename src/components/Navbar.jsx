@@ -21,18 +21,21 @@ const Navbar = () => {
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-        className="flex items-center space-x-14 text-lg"
+        className="flex items-center space-x-8 text-lg"
       >
-        <NavLink to="/Home" className="hover:text-blue-400" end>
+        <NavLink to="/home" className="text-blue-400 hover:text-black" end>
           Home
         </NavLink>
-        <NavLink to="/Aboutus" className="hover:text-blue-400">
-          About
-        </NavLink>
-        <NavLink to="/Services" className="hover:text-blue-400">
+        <NavLink to="/services" className="text-blue-400 hover:text-black">
           Services
         </NavLink>
-        <NavLink to="/Contactus" className="hover:text-blue-400 text-lg">
+        <NavLink to="/projects" className="text-blue-400 hover:text-black">
+          Projects +
+        </NavLink>
+        <NavLink to="/aboutus" className="text-blue-400 hover:text-black text-lg">
+         About Us
+        </NavLink>
+        <NavLink to="/contactus" className="text-blue-400 hover:text-black text-lg">
           Contact Us
         </NavLink>
       </motion.nav>

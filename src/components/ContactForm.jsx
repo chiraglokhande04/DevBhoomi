@@ -4,7 +4,7 @@ const ContactForm = () => {
   return (
     <div className="flex flex-col md:flex-row w-full max-w-4xl mx-auto my-6 bg-white rounded-2xl shadow-lg overflow-hidden">
       {/* Left Section */}
-      <div className="bg-gray-900 text-white p-8 md:w-1/2 text-center flex flex-col justify-center">
+      <div className="bg-gray-900 text-white p-14 md:w-1/2 text-center flex flex-col justify-center">
         <h4 className="text-blue-400 uppercase tracking-widest text-sm">
           Elevate Your Space with Devbhoomi Group.
         </h4>
@@ -15,7 +15,7 @@ const ContactForm = () => {
       </div>
 
       {/* Right Section */}
-      <div className="bg-blue-500 p-4 md:w-1/2">
+      <div className="bg-blue-500 p-14 md:w-1/2">
         <h3 className="text-white text-2xl font-bold mb-4">Get in Touch</h3>
         <form className="space-y-4">
           <div>

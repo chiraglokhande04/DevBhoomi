@@ -17,6 +17,7 @@ import FAQ from "./components/FAQ";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
 import StartPage from "./pages/StartPage";
+import ServicesPage from "./pages/ServicesPage";
 // import Footer from "./components/Footer";
 
 
@@ -27,6 +28,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<StartPage/>} /> 
         <Route path="/home" element={<Home />} />
+        <Route path="/services" element={<ServicesPage />} />
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/contactus" element={<Contactus />} />
       </Routes>

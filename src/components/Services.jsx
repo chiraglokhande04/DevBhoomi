@@ -14,7 +14,7 @@ const Services = () => {
   return (
     <div className="bg-black text-white py-16 px-4 min-h-screen flex flex-col items-center">
 
-<motion.h2 className="text-xl font-semibold text-blue-500 mb-2">OUR SERVICES</motion.h2>
+      <motion.h2 className="text-xl font-semibold text-blue-500 mb-2">OUR SERVICES</motion.h2>
 
       <motion.div
         className="max-w-6xl mx-auto text-center"
@@ -22,7 +22,7 @@ const Services = () => {
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1 }}
       >
-       
+
         <h3 className="text-4xl font-bold mb-4">
           Explore Our Range of Elevator Solutions
         </h3>
