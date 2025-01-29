@@ -7,7 +7,7 @@ const ElevatorInfoComponent = () => {
       {/* Image Section */}
       <div className="w-full max-w-lg md:w-1/2 flex justify-center mb-8 md:mb-0">
         <img
-          src="https://devbhoomielevator.com/wp-content/uploads/2024/03/Quality-and-Excellence-in-Elevator-Solutions.webp" // Replace with your actual image path
+          src="https://devbhoomielevator.com/wp-content/uploads/2024/03/Quality-and-Excellence-in-Elevator-Solutions.webp" 
           alt="Elevator Presentation"
           className="rounded-2xl shadow-lg"
         />

@@ -1,4 +1,6 @@
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import { MdLocationOn, MdEmail } from "react-icons/md";
+import { FiPhoneCall } from "react-icons/fi";
 
 const Footer = () => {
   return (
@@ -15,15 +17,21 @@ const Footer = () => {
         <FaInstagram className="cursor-pointer hover:text-pink-500" />
         <FaTwitter className="cursor-pointer hover:text-blue-400" />
       </div>
-      <div className="text-sm mb-2">
-        📍 Sigma City Chowk, Zirakpur, Punjab 140603
+      <div className="text-sm mb-2 flex justify-center items-center space-x-2">
+        <MdLocationOn className="text-blue-500" />
+        <span>Sigma City Chowk, Zirakpur, Punjab 140603</span>
       </div>
-      <div className="text-sm mb-2">
-        📞 <a href="tel:+919717686390" className="hover:underline">+91 97176 86390</a> |
-        <a href="tel:+919716849858" className="hover:underline"> +91 97168 49858</a>
+      <div className="text-sm mb-2 flex justify-center items-center space-x-2">
+        <FiPhoneCall className="text-blue-500" />
+        <a href="tel:+919717686390" className="hover:underline">+91 97176 86390</a>
+        <span>|</span>
+        <a href="tel:+919716849858" className="hover:underline">+91 97168 49858</a>
       </div>
-      <div className="text-sm mb-4">
-        ✉️ <a href="mailto:info@devbhoomielevator.com" className="hover:underline">info@devbhoomielevator.com</a>
+      <div className="text-sm mb-4 flex justify-center items-center space-x-2">
+        <MdEmail className="text-blue-500" />
+        <a href="mailto:info@devbhoomielevator.com" className="hover:underline">
+          info@devbhoomielevator.com
+        </a>
       </div>
       <div className="text-xs">
         © 2024 Devbhoomi Elevator. All Rights Reserved. Designed By Founder Mr. Pranav Tyagi
