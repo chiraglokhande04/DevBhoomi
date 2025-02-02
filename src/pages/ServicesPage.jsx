@@ -1,5 +1,6 @@
 import React from 'react';
-import ElevatorHero from '../components/ElevatorHero';
+import ElevatorHero from '../components/Home/ElevatorHero';
+import ServicesHero from '../components/Services/ServicesHero';
 
 export default function ServicesPage() {
   const services = [
@@ -43,7 +44,7 @@ export default function ServicesPage() {
 
   return (
     <>
-    <ElevatorHero/>
+    <ServicesHero/>
     <div className="min-h-screen bg-gray-50 p-14">
       <div className="text-center mb-10 ">
         <h1 className="text-3xl font-bold text-gray-800">DEVBHOOMI Exceptional Elevator Services</h1>
@@ -53,7 +54,7 @@ export default function ServicesPage() {
       </div>
       <div className="grid gap-8 md:grid-cols-3 px-6 max-w-7xl mx-auto">
         {services.map((service, index) => (
-          <div key={index} className="bg-blue-400 rounded-2xl shadow-lg border border-2 border-black  text-center">
+          <div key={index} className="bg-blue-400 rounded-2xl shadow-lg border-2 border-black  text-center">
             <img
               src={service.imageUrl}
               alt={service.title}
@@ -64,7 +65,7 @@ export default function ServicesPage() {
               {service.title}
             </h2>
             <p className="text-white mb-4">{service.description}</p>
-            <button className="border border-3 border-white text-white px-4 py-2 rounded-full hover:bg-black">
+            <button className=" border-3 border-white text-white px-4 py-2 rounded-full hover:bg-black">
               {service.buttonText}
             </button>
 
@@ -77,3 +78,4 @@ export default function ServicesPage() {
     </>
   );
 }
+

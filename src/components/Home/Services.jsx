@@ -6,6 +6,8 @@ import { FaRegHandshake } from "react-icons/fa";
 import { GrInstallOption } from "react-icons/gr";
 import { FaHandHoldingUsd } from "react-icons/fa";
 import { MdHealthAndSafety } from "react-icons/md";
+import FlipCard from "./Flipcard";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const services = [
@@ -46,28 +48,21 @@ const Services = () => {
         transition={{ duration: 1, staggerChildren: 0.2 }}
       >
         {services.map((service, index) => (
-          <motion.div
-            key={index}
-            className="px-12 py-[70px] rounded-lg shadow-lg bg-white text-black flex justify-center flex-col items-center"
-            initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: index * 0.2 }}
-          >
-            <div className="text-6xl mb-4 text-blue-400">{service.icon}</div>
-            <h4 className="text-lg  mb-2">{service.title}</h4>
-            <p className="text-sm">{service.description}</p>
-          </motion.div>
+         <FlipCard service={service} index={index} key={index} />
         ))}
       </motion.div>
 
+<Link to='/services'>
+
       <motion.button
-        className="mt-8 bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600"
+        className="mt-8 bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-white hover:text-black"
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
       >
         Know More
       </motion.button>
+      </Link> 
     </div>
   );
 };

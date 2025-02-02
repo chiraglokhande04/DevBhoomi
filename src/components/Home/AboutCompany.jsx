@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Counter = ({ from, to, duration }) => {
   const [count, setCount] = useState(from);
@@ -67,6 +68,7 @@ const AboutCompany = () => {
           </motion.div>
 
           {/* "Learn More" Button: Bottom to Top */}
+          <Link to='/aboutus'>
           <motion.button
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -75,6 +77,7 @@ const AboutCompany = () => {
           >
             Learn More
           </motion.button>
+          </Link> 
         </div>
 
         {/* Image Section: Right to Left */}
