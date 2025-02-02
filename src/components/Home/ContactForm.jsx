@@ -4,11 +4,11 @@ const ContactForm = () => {
   return (
     <div className="flex flex-col md:flex-row w-full max-w-4xl mx-auto my-6 bg-white rounded-2xl shadow-lg overflow-hidden">
       {/* Left Section */}
-      <div className="bg-gray-900 text-white p-14 md:w-1/2 text-center flex flex-col justify-center">
+      <div className="bg-gray-900 text-white h-32 md:h-auto text-sm p-16 md:w-1/2 text-center flex flex-col justify-center">
         <h4 className="text-blue-400 uppercase tracking-widest text-sm">
           Elevate Your Space with Devbhoomi Group.
         </h4>
-        <h2 className="text-3xl font-bold mt-2 leading-tight">
+        <h2 className="md:text-3xl font-bold mt-2 leading-tight">
           Take the next step towards superior elevator solutions with
           Devbhoomi Group.
         </h2>

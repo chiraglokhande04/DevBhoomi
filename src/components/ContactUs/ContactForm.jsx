@@ -2,8 +2,9 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <div className="flex flex-col md:flex-row bg-[#0099FF] text-white rounded-lg p-8 m-36">
-     <div className="md:w-1/2 space-y-6">
+    <div className="flex flex-col md:flex-row bg-[#0099FF] text-white rounded-lg p-8 m-4 md:m-36">
+      {/* Left Section (Contact Info) */}
+      <div className="md:w-1/2 space-y-6 mb-6 md:mb-0">
         <h2 className="text-xl font-semibold tracking-widest">DEVBHOOMI Contact & Support</h2>
         <p className="text-sm">
           Thank you for your interest in DEVBHOOMI Elevators India Pvt. Ltd. We are dedicated to providing top-notch service and support for all your elevator needs.
@@ -33,6 +34,7 @@ const ContactForm = () => {
         </div>
       </div>
 
+      {/* Right Section (Form) */}
       <div className="md:w-1/2 p-4">
         <h2 className="text-2xl font-bold mb-4">Get in Touch</h2>
         <form className="space-y-4">

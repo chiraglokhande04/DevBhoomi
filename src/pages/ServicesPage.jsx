@@ -52,7 +52,7 @@ export default function ServicesPage() {
           At DEVBHOOMI, we are committed to delivering exceptional service and ensuring the optimal performance and safety of your elevator systems. Contact us today to learn more about our services and how we can assist you with your elevator maintenance and modernization needs.
         </p>
       </div>
-      <div className="grid gap-8 md:grid-cols-3 px-6 max-w-7xl mx-auto">
+      <div className="md:grid gap-8 md:grid-cols-3 w-[300px] md:px-6 max-w-7xl  md:mx-auto flex flex-col justify-center">
         {services.map((service, index) => (
           <div key={index} className="bg-blue-400 rounded-2xl shadow-lg border-2 border-black  text-center">
             <img

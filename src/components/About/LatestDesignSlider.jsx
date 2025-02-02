@@ -29,13 +29,19 @@ export default function LatestDesignsSlider() {
           slidesPerView={4}
           autoplay={{ delay: 2000, disableOnInteraction: false }}
           breakpoints={{
-            640: { slidesPerView: 4 },
-            1024: { slidesPerView: 4 }
+            360: { slidesPerView: 2 }, // On small screens (mobile)
+            768: { slidesPerView: 2 }, // On medium screens (tablet)
+            1024: { slidesPerView: 3 }, // On larger screens (desktop)
+            1280: { slidesPerView: 4 }, // On very large screens (larger desktops)
           }}
         >
           {images.map((img, index) => (
             <SwiperSlide key={index}>
-              <img src={img} alt={`Design ${index + 1}`} className="rounded-lg shadow-lg h-[400px] border border-1 border-blue-400" />
+              <img
+                src={img}
+                alt={`Design ${index + 1}`}
+                className="rounded-lg shadow-lg h-[300px] md:h-[400px] border-1 border-blue-400"
+              />
             </SwiperSlide>
           ))}
         </Swiper>

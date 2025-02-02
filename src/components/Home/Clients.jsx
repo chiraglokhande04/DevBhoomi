@@ -27,24 +27,27 @@ const Clients = () => {
       </h3>
 
       {/* Clients Logo Slider */}
-      <div className="w-full max-w-6xl">
+      <div className="w-full max-w-6xl px-4">
         <Swiper
           slidesPerView={7}
-          spaceBetween={10}
+          spaceBetween={20}
           freeMode={true}
           autoplay={{ delay: 2000, disableOnInteraction: false }}
           modules={[FreeMode, Autoplay]}
           loop={true}
           breakpoints={{
-            640: { slidesPerView: 2 },
-            768: { slidesPerView: 3 },
-            1024: { slidesPerView: 4 },
+            320: { slidesPerView: 1, spaceBetween: 20 },  // Mobile view - One slide at a time
+            480: { slidesPerView: 2, spaceBetween: 30 },  // Small tablets - Two slides at a time
+            640: { slidesPerView: 3, spaceBetween: 20 },  // Larger tablets - Three slides at a time
+            768: { slidesPerView: 3, spaceBetween: 30 },
+            1024: { slidesPerView: 4, spaceBetween: 30 },
+            1280: { slidesPerView: 5, spaceBetween: 30 },
           }}
           className="w-full"
         >
           {clients.map((client, index) => (
             <SwiperSlide key={index} className="flex justify-center">
-              <div className="w-36 h-36 flex items-center justify-center rounded-xl border-2 border-blue-400 p-2 shadow-lg">
+              <div className="w-32 h-32 sm:w-40 sm:h-40 flex items-center justify-center rounded-xl border-2 border-blue-400 p-4 shadow-lg">
                 <img
                   src={client.img}
                   alt={client.alt}
