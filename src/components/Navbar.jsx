@@ -12,8 +12,8 @@ const Navbar = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="flex flex-col items-center space-x-3"
       >
-        <img src="/path-to-logo.png" alt="Logo" className="h-12" />
-        <h1 className="text-lg font-bold">DEVBHOOMI ELEVATORS</h1>
+        <img src="https://devbhoomielevator.com/wp-content/uploads/2024/03/Layer_11_copy.png" alt="Logo" className="h-12" />
+        {/* <h1 className="text-lg font-bold">DEVBHOOMI ELEVATORS</h1> */}
       </motion.div>
 
       {/* Navigation Links (Bottom to Top) */}

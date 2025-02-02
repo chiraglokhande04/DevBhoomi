@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Navbar from "./Navbar";
+import Navbar from "../Navbar";
 import { Link } from "react-router-dom";
 import { TbMailOpened } from "react-icons/tb";
 import { FaPhoneAlt } from "react-icons/fa";

@@ -7,33 +7,37 @@ const Footer = () => {
     <footer className="bg-black text-white text-center p-6">
       <div className="flex justify-center mb-4">
         <img
-          src="/logo.png"
+          src="https://devbhoomielevator.com/wp-content/uploads/2024/03/dev_logo.png"
           alt="Devbhoomi Elevators"
           className="h-12"
         />
       </div>
       <div className="flex justify-center space-x-4 text-xl mb-4">
-        <FaFacebookF className="cursor-pointer hover:text-blue-500" />
-        <FaInstagram className="cursor-pointer hover:text-pink-500" />
-        <FaTwitter className="cursor-pointer hover:text-blue-400" />
+        <FaFacebookF className="cursor-pointer text-blue-400 hover:text-white" />
+        <FaInstagram className="cursor-pointer text-blue-400 hover:text-white" />
+        <FaTwitter className="cursor-pointer text-blue-400 hover:text-white" />
       </div>
-      <div className="text-sm mb-2 flex justify-center items-center space-x-2">
-        <MdLocationOn className="text-blue-500" />
-        <span>Sigma City Chowk, Zirakpur, Punjab 140603</span>
+      <div className="flex gap-x-5 justify-center">
+        <div className="text-sm mb-2 flex justify-center items-center space-x-2">
+          <MdLocationOn className="text-blue-500" />
+          <span>Sigma City Chowk, Zirakpur, Punjab 140603</span>
+        </div>
+        <div className="text-sm mb-2 flex justify-center items-center space-x-2">
+          <FiPhoneCall className="text-blue-500" />
+          <a href="tel:+919717686390" className="hover:underline">+91 97176 86390</a>
+          <span>|</span>
+          <a href="tel:+919716849858" className="hover:underline">+91 97168 49858</a>
+        </div>
+        <div className="text-sm mb-4 flex justify-center items-center space-x-2">
+          <MdEmail className="text-blue-500" />
+          <a href="mailto:info@devbhoomielevator.com" className="hover:underline">
+            info@devbhoomielevator.com
+          </a>
+        </div>
+
       </div>
-      <div className="text-sm mb-2 flex justify-center items-center space-x-2">
-        <FiPhoneCall className="text-blue-500" />
-        <a href="tel:+919717686390" className="hover:underline">+91 97176 86390</a>
-        <span>|</span>
-        <a href="tel:+919716849858" className="hover:underline">+91 97168 49858</a>
-      </div>
-      <div className="text-sm mb-4 flex justify-center items-center space-x-2">
-        <MdEmail className="text-blue-500" />
-        <a href="mailto:info@devbhoomielevator.com" className="hover:underline">
-          info@devbhoomielevator.com
-        </a>
-      </div>
-      <div className="text-xs">
+
+      <div className="text-xs flex justify-center">
         © 2024 Devbhoomi Elevator. All Rights Reserved. Designed By Founder Mr. Pranav Tyagi
       </div>
     </footer>
