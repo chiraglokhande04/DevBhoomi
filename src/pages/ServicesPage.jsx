@@ -1,6 +1,7 @@
-import React from 'react';
-import ElevatorHero from '../components/Home/ElevatorHero';
+import React, { useEffect } from 'react';
 import ServicesHero from '../components/Services/ServicesHero';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 
 export default function ServicesPage() {
   const services = [
@@ -22,7 +23,7 @@ export default function ServicesPage() {
       imageUrl: "https://via.placeholder.com/150", // Replace with actual image
       buttonText: "Get Now",
     },
-     {
+    {
       title: "Modernization Of Elevators",
       description: "Elevator technology evolves rapidly, & modernization is key to keeping your elevators reliable & safe. Our modernization services aim to upgrade your elevator's components to enhance its reliability, comfort, & appearance, while also ensuring compliance with the latest safety standards.",
       imageUrl: "https://via.placeholder.com/150", // Replace with actual image
@@ -42,40 +43,51 @@ export default function ServicesPage() {
     },
   ];
 
+  // Initialize AOS on component mount
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true }); // Set duration and whether animation should happen only once
+  }, []);
+
   return (
     <>
-    <ServicesHero/>
-    <div className="min-h-screen bg-gray-50 p-14">
-      <div className="text-center mb-10 ">
-        <h1 className="text-3xl font-bold text-gray-800">DEVBHOOMI Exceptional Elevator Services</h1>
-        <p className="mt-4 text-gray-600">
-          At DEVBHOOMI, we are committed to delivering exceptional service and ensuring the optimal performance and safety of your elevator systems. Contact us today to learn more about our services and how we can assist you with your elevator maintenance and modernization needs.
-        </p>
-      </div>
-      <div className="md:grid gap-8 md:grid-cols-3 w-[300px] md:px-6 max-w-7xl  md:mx-auto flex flex-col justify-center">
-        {services.map((service, index) => (
-          <div key={index} className="bg-blue-400 rounded-2xl shadow-lg border-2 border-black  text-center">
-            <img
-              src={service.imageUrl}
-              alt={service.title}
-              className="w-full h-50% object-cover rounded-t-xl mb-4"
-            />
-            <div className='p-6'>
-            <h2 className="text-xl font-semibold text-white mb-2">
-              {service.title}
-            </h2>
-            <p className="text-white mb-4">{service.description}</p>
-            <button className=" border-3 border-white text-white px-4 py-2 rounded-full hover:bg-black">
-              {service.buttonText}
-            </button>
+      <ServicesHero />
+      <div className="min-h-screen bg-gray-50 p-14">
+        <div className="text-center mb-10">
+          <h1 className="text-3xl font-bold text-gray-800">DEVBHOOMI Exceptional Elevator Services</h1>
+          <p className="mt-4 text-gray-600">
+            At DEVBHOOMI, we are committed to delivering exceptional service and ensuring the optimal performance and safety of your elevator systems. Contact us today to learn more about our services and how we can assist you with your elevator maintenance and modernization needs.
+          </p>
+        </div>
 
+        {/* Services Grid */}
+        <div className="md:grid gap-8 md:grid-cols-3 w-[300px] md:w-[1200px] md:px-6 md:max-w-7xl md:mx-auto flex flex-col justify-center">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="bg-blue-400 rounded-2xl shadow-lg border-2 border-black text-center"
+              data-aos="fade-up" // Add AOS animation for each service card
+            >
+              <img
+                src={service.imageUrl}
+                alt={service.title}
+                className="w-full h-50% object-cover rounded-t-xl mb-4"
+                data-aos="zoom-in" // AOS animation for the image
+              />
+              <div className="p-6">
+                <h2 className="text-xl font-semibold text-white mb-2" data-aos="fade-right"> 
+                  {service.title}
+                </h2>
+                <p className="text-white mb-4" data-aos="fade-left">
+                  {service.description}
+                </p>
+                <button className="border-3 border-white text-white px-4 py-2 rounded-full hover:bg-black" data-aos="fade-up">
+                  {service.buttonText}
+                </button>
+              </div>
             </div>
-           
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
     </>
   );
 }
-

@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 
 const projects = [
   {
@@ -124,7 +126,16 @@ const projects = [
   }
 ];
 
+
 const InstallationProjects = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,  // Animation duration in ms
+      easing: 'ease-in-out',  // Animation easing
+      once: true,  // Animation runs only once when the element enters the viewport
+    });
+  }, []);
+
   return (
     <div className="bg-white py-8">
       <h2 className="text-center text-blue-400 text-xl font-semibold uppercase">Our Project</h2>
@@ -132,7 +143,12 @@ const InstallationProjects = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:px-16">
         {projects.map((project, index) => (
-          <div key={index} className="bg-blue-400 rounded-2xl shadow-lg p-4 text-white text-center">
+          <div
+            key={index}
+            className="bg-blue-400 rounded-2xl shadow-lg p-4 text-white text-center"
+            data-aos="fade-up"  // Add animation to this div
+            data-aos-delay={`${index * 100}`}  // Optional: delay based on the index to stagger animations
+          >
             <video autoPlay muted className="w-full h-80 object-cover rounded-md" controls>
               <source src={project.videoSrc} type="video/mp4" />
               Your browser does not support the video tag.

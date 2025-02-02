@@ -1,8 +1,23 @@
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 export default function ElevatorComponent() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      easing: 'ease-in-out', // Easing function
+      once: true, // Animation triggers once when element is in view
+    });
+  }, []);
+
   return (
     <div className="flex flex-col md:flex-row bg-white px-5 md:px-28 py-12 md:py-20 rounded-2xl shadow-lg">
       {/* Left Section */}
-      <div className=" md:w-1/2 space-y-6">
+      <div
+        className="md:w-1/2 space-y-6"
+        data-aos="fade-up" // Add the AOS animation for the left section
+      >
         <h2 className="text-xl md:text-3xl font-bold text-gray-900">
           Setting the Standard for Quality and Excellence in Elevator Solutions
         </h2>
@@ -17,11 +32,15 @@ export default function ElevatorComponent() {
           <p className="text-xs md:text-base text-gray-700">
             Our success is attributed to the dedication and efforts of our multidisciplinary team comprising design, production, installation, procurement, and ancillary functions. Quality and safety are paramount in our operations, ensuring constant goodwill from our clients. With a commitment to evolving as a quality-conscious company, we prioritize meeting clients’ precise requirements while upholding the highest standards of safety and excellence.
           </p>
-        </div> 
+        </div>
       </div>
 
       {/* Right Section (Image) */}
-      <div className="md:w-1/2 flex justify-center items-center mt-6 md:mt-0">
+      <div
+        className="md:w-1/2 flex justify-center items-center mt-6 md:mt-0"
+        data-aos="zoom-in" // Apply a zoom-in animation to the image
+        data-aos-delay="200" // Optional: Delay the animation for the image
+      >
         <img
           src="https://devbhoomielevator.com/wp-content/uploads/2024/03/elevator-maintenance-services.webp"
           alt="Elevator Technician"

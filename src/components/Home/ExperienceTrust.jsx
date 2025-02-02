@@ -1,22 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ExperienceTrust = () => {
-  const [contentAnimation, setContentAnimation] = useState(false);
-
   useEffect(() => {
-    const timer = setTimeout(() => setContentAnimation(true), 300); // Delay before animation starts
-    return () => clearTimeout(timer);
+    AOS.init({ duration: 1000 }); // Initialize AOS with animation duration
   }, []);
 
   return (
     <div className="bg-gray-100 py-12 flex justify-center">
       <div className="w-full sm:w-3/4 text-center px-4">
-        <h3 className="text-blue-600 uppercase text-sm">Why Choose Us</h3>
-        <h2 className="text-3xl font-bold mt-2">Experience & Trust</h2>
+        <h3 className="text-blue-600 uppercase text-sm" data-aos="fade-up">Why Choose Us</h3>
+        <h2 className="text-3xl font-bold mt-2" data-aos="fade-up" data-aos-delay="200">Experience & Trust</h2>
         <div className="mt-8 flex flex-col lg:flex-row bg-blue-500 text-white rounded-xl overflow-hidden">
           {/* Content Section */}
           <div
-            className={`w-full lg:w-2/3 p-8 grid grid-cols-1 sm:grid-cols-2 gap-6 transition-transform duration-1000 ${contentAnimation ? 'transform translate-x-0' : 'transform translate-x-16'}`}
+            className="w-full lg:w-2/3 p-8 grid grid-cols-1 sm:grid-cols-2 gap-6"
+            data-aos="fade-right"
           >
             <div className="flex items-start">
               <span className="text-4xl font-bold opacity-50 mr-4">01</span>
@@ -57,13 +57,11 @@ const ExperienceTrust = () => {
           </div>
 
           {/* Video Section */}
-          <div className="w-full lg:w-1/3 relative overflow-hidden">
-            <div className={`absolute w-full h-full transition-transform duration-1000 ${contentAnimation ? 'transform translate-x-0' : 'transform translate-x-full'}`}>
-              <video autoPlay loop muted className="w-full h-full object-cover">
-                <source src="https://devbhoomielevator.com/wp-content/uploads/2024/03/IMAGE.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
+          <div className="w-full lg:w-1/3 relative overflow-hidden" data-aos="fade-left">
+            <video autoPlay loop muted className="w-full h-full object-cover">
+              <source src="https://devbhoomielevator.com/wp-content/uploads/2024/03/IMAGE.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </div>

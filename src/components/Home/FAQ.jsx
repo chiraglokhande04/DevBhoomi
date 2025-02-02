@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FaChevronDown, FaChevronRight } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 const faqs = [
   {
@@ -23,6 +25,11 @@ const faqs = [
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
+  // Initialize AOS
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true }); // Set duration and whether animation should happen only once
+  }, []);
+
   return (
     <div
       className="relative h-screen flex items-center justify-center bg-fixed bg-center bg-cover"
@@ -43,12 +50,17 @@ const FAQ = () => {
         {/* Accordion Items */}
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="border border-gray-500 rounded-lg">
+            <div
+              key={index}
+              className="border border-gray-500 rounded-lg"
+              data-aos="fade-up" // AOS animation for fade-up
+            >
               <button
                 className="w-full flex justify-between items-center p-4 text-lg font-semibold"
                 onClick={() =>
                   setOpenIndex(openIndex === index ? null : index)
                 }
+                data-aos="fade-right" // Animation for button appearance
               >
                 {faq.question}
                 {openIndex === index ? (
@@ -58,7 +70,10 @@ const FAQ = () => {
                 )}
               </button>
               {openIndex === index && (
-                <div className="p-4 border-t border-gray-500 text-gray-300">
+                <div
+                  className="p-4 border-t border-gray-500 text-gray-300"
+                  data-aos="fade-in" // Animation for answer fade-in
+                >
                   {faq.answer}
                 </div>
               )}

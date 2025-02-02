@@ -1,8 +1,11 @@
+import React, { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import { Pagination, Autoplay } from 'swiper/modules';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const images = [
   'https://devbhoomielevator.com/wp-content/uploads/2024/03/7.webp',
@@ -15,6 +18,14 @@ const images = [
 ];
 
 export default function LatestDesignsSlider() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      easing: 'ease-in-out', // Easing function
+      once: true, // Animation triggers once when element is in view
+    });
+  }, []);
+
   return (
     <div className="bg-black text-white py-10 pb-20">
       <div className="text-center mb-10">
@@ -36,7 +47,7 @@ export default function LatestDesignsSlider() {
           }}
         >
           {images.map((img, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} data-aos="fade-up"> {/* Add AOS animation */}
               <img
                 src={img}
                 alt={`Design ${index + 1}`}

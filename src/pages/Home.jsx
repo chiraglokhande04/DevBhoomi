@@ -4,7 +4,7 @@ import AboutCompany from "../components/Home/AboutCompany";
 import Services from "../components/Home/Services";
 import ExperiencePage from "../components/Home/ExperienceTrust";
 import TeamSection from "../components/Home/TeamSection";
-import Testimonials from "../components/Home/Testimonials";
+import  { TestimonialSlider } from "../components/Home/Testimonials";
 import Clients from "../components/Home/Clients";
 import FAQ from "../components/Home/FAQ";
 import ContactForm from "../components/Home/ContactForm";
@@ -18,7 +18,7 @@ const Home = () => {
               <Services/> 
               <ExperiencePage/>
               <TeamSection/>
-              <Testimonials/>
+              <TestimonialSlider/>
               <Clients/>
               <FAQ/>
               <ContactForm/>
