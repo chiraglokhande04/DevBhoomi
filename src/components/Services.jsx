@@ -1,14 +1,20 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { MdOutlineMiscellaneousServices } from "react-icons/md";
+import { GiElevator } from "react-icons/gi";
+import { FaRegHandshake } from "react-icons/fa";
+import { GrInstallOption } from "react-icons/gr";
+import { FaHandHoldingUsd } from "react-icons/fa";
+import { MdHealthAndSafety } from "react-icons/md";
 
 const Services = () => {
   const services = [
-    { title: "Smart Service Setup", description: "", icon: "⚙️" },
-    { title: "Modernisation Of Elevators", description: "", icon: "🏗️" },
-    { title: "Varied Service Centers", description: "", icon: "📍" },
-    { title: "Hassle Free Installation", description: "", icon: "🔧" },
-    { title: "100% hassle free service plan", description: "", icon: "✅" },
-    { title: "Rescue & Safety Drills", description: "", icon: "🚑" },
+    { title: "Smart Service Setup", description: "", icon: <MdOutlineMiscellaneousServices /> },
+    { title: "Modernisation Of Elevators", description: "", icon: <GiElevator /> },
+    { title: "Varied Service Centers", description: "", icon: <FaRegHandshake />},
+    { title: "Hassle Free Installation", description: "", icon: <GrInstallOption /> },
+    { title: "100% hassle free service plan", description: "", icon: <FaHandHoldingUsd />},
+    { title: "Rescue & Safety Drills", description: "", icon: <MdHealthAndSafety />},
   ];
 
   return (
@@ -42,13 +48,13 @@ const Services = () => {
         {services.map((service, index) => (
           <motion.div
             key={index}
-            className="p-6 rounded-lg shadow-lg bg-white text-black"
+            className="px-12 py-[70px] rounded-lg shadow-lg bg-white text-black flex justify-center flex-col items-center"
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: index * 0.2 }}
           >
-            <div className="text-4xl mb-4">{service.icon}</div>
-            <h4 className="text-lg font-semibold mb-2">{service.title}</h4>
+            <div className="text-6xl mb-4 text-blue-400">{service.icon}</div>
+            <h4 className="text-lg  mb-2">{service.title}</h4>
             <p className="text-sm">{service.description}</p>
           </motion.div>
         ))}
