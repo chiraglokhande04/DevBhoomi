@@ -1,16 +1,17 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ProjectFlipCard from './ProjectFlipCard';
 
 const projects = [
-  { name: 'Punjab Police Officer Institute', logo: 'https://via.placeholder.com/100' },
-  { name: 'Loram maintenance', logo: 'https://via.placeholder.com/100' },
-  { name: 'ISION INDIA GROUP', logo: 'https://via.placeholder.com/100' },
-  { name: 'Loram maintenance', logo: 'https://via.placeholder.com/100' },
-  { name: 'Loram maintenance', logo: 'https://via.placeholder.com/100' },
-  { name: 'Loram maintenance', logo: 'https://via.placeholder.com/100' },
-  { name: 'Loram maintenance', logo: 'https://via.placeholder.com/100' },
-  { name: 'Loram maintenance', logo: 'https://via.placeholder.com/100' },
+  { name: 'Punjab Police Officer Institute', logo: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/5.png' ,design:"Architecture", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus"},
+  { name: 'Loram maintenance', logo: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/10.png' ,design:"Interior Design", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus"},
+  { name: 'VISION INDIA GROUP', logo: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/11.png' ,design:"Furniture Design", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus"},
+  { name: 'Loram maintenance', logo: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/image-2.png' ,design:'Home Decor', description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus"},
+  { name: 'Loram maintenance', logo: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/images-2.png',design:"Architecture", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus" },
+  { name: 'Loram maintenance', logo: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/3.png',design:"Interior Design", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus" },
+  { name: 'Loram maintenance', logo: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/4.png',design:"Furniture Design", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus" },
+  { name: 'Loram maintenance', logo: 'https://via.placeholder.com/100',design:'Home Decor', description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus" },
 ];
 
 export default function MaintenanceProjects() {
@@ -29,15 +30,7 @@ export default function MaintenanceProjects() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
         {projects.map((project, index) => (
-          <div
-            key={index}
-            data-aos="fade-up" // You can change this to other AOS animation types like 'fade-down', 'zoom-in', etc.
-            data-aos-delay={`${index * 100}`} // Optional: adds a delay for each project for staggered animation
-            className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center"
-          >
-            <img src={project.logo} alt={project.name} className="h-20 w-20 object-contain mb-4" />
-            <p className="text-gray-700 text-center font-medium">{project.name}</p>
-          </div>
+         <ProjectFlipCard project={project} index={index} key={index} data-aos="zoom-in" data-aos-delay={index * 100} />
         ))}
       </div>
     </div>

@@ -7,14 +7,14 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const clients = [
-  { img: "kundanwala.png", alt: "Kundanwala Jewels" },
-  { img: "punjab-chemicals.png", alt: "Punjab Chemicals" },
-  { img: "emergency-112.png", alt: "Emergency 112" },
-  { img: "police-logo.png", alt: "Police Department" },
-  { img: "thdc-india.png", alt: "THDC India Limited" },
-  { img: "regulatory-board.png", alt: "Regulatory Board" },
-  { img: "vision-india.png", alt: "Vision India Group" },
-  { img: "air-force-naval.png", alt: "Air Force Naval Housing" },
+  { img: "https://devbhoomielevator.com/wp-content/uploads/2024/03/5.png", alt: "Kundanwala Jewels" },
+  { img: "https://devbhoomielevator.com/wp-content/uploads/2024/03/images-2.png", alt: "Punjab Chemicals" },
+  { img: "https://devbhoomielevator.com/wp-content/uploads/2024/03/image-2.png", alt: "Emergency 112" },
+  { img: "https://devbhoomielevator.com/wp-content/uploads/2024/03/11.png", alt: "Police Department" },
+  { img: "https://devbhoomielevator.com/wp-content/uploads/2024/03/10.png", alt: "THDC India Limited" },
+  { img: "https://devbhoomielevator.com/wp-content/uploads/2024/03/8.png", alt: "Regulatory Board" },
+  { img: "https://devbhoomielevator.com/wp-content/uploads/2024/03/4.png", alt: "Vision India Group" },
+  { img: "https://devbhoomielevator.com/wp-content/uploads/2024/03/3.png", alt: "Air Force Naval Housing" },
 ];
 
 const Clients = () => {
@@ -42,25 +42,25 @@ const Clients = () => {
       <div className="w-full max-w-6xl px-4" data-aos="zoom-in">
         <Swiper
           slidesPerView={7}
-          spaceBetween={20}
+          spaceBetween={2}
           freeMode={true}
           autoplay={{ delay: 2000, disableOnInteraction: false }}
           modules={[FreeMode, Autoplay]}
           loop={true}
           breakpoints={{
-            320: { slidesPerView: 1, spaceBetween: 20 },
-            480: { slidesPerView: 2, spaceBetween: 30 },
-            640: { slidesPerView: 3, spaceBetween: 20 },
-            768: { slidesPerView: 3, spaceBetween: 30 },
-            1024: { slidesPerView: 4, spaceBetween: 30 },
-            1280: { slidesPerView: 5, spaceBetween: 30 },
+            320: { slidesPerView: 1, spaceBetween: 2 },
+            480: { slidesPerView: 2, spaceBetween: 3 },
+            640: { slidesPerView: 3, spaceBetween: 2 },
+            768: { slidesPerView: 8, spaceBetween: 3 },
+            1024: { slidesPerView: 8, spaceBetween: 1 },
+            1280: { slidesPerView: 8, spaceBetween: 3 },
           }}
           className="w-full"
         >
           {clients.map((client, index) => (
             <SwiperSlide key={index} className="flex justify-center">
               <div
-                className="w-32 h-32 sm:w-40 sm:h-40 flex items-center justify-center rounded-xl border-2 border-blue-400 p-4 shadow-lg"
+                className="w-20 h-20 sm:w-28 sm:h-28 flex items-center justify-center rounded-xl border-2 border-blue-400  shadow-lg"
                 data-aos="flip-left"
                 data-aos-delay={index * 100}
               >

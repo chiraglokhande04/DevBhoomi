@@ -1,9 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import ServicesHero from '../components/Services/ServicesHero';
+import Modal from '../components/Modal'; // Import the modal
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // Import AOS styles
+import 'aos/dist/aos.css';
 
 export default function ServicesPage() {
+  const [isModalOpen, setIsModalOpen] = useState(false); // Modal state
+
   const services = [
     {
       title: "Smart Service Setup",
@@ -48,6 +51,9 @@ export default function ServicesPage() {
     AOS.init({ duration: 1000, once: true }); // Set duration and whether animation should happen only once
   }, []);
 
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
   return (
     <>
       <ServicesHero />
@@ -64,7 +70,7 @@ export default function ServicesPage() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-blue-400 rounded-2xl shadow-lg border-2 border-black text-center"
+              className="bg-blue-400 rounded-2xl shadow-lg border-2 border-black text-center flex flex-col justify-between items-center" 
               data-aos="fade-up" // Add AOS animation for each service card
             >
               <img
@@ -80,7 +86,7 @@ export default function ServicesPage() {
                 <p className="text-white mb-4" data-aos="fade-left">
                   {service.description}
                 </p>
-                <button className="border-3 border-white text-white px-4 py-2 rounded-full hover:bg-black" data-aos="fade-up">
+                <button onClick={openModal} className="border-3 border-white text-white px-4 py-2 rounded-full hover:bg-black" data-aos="fade-up">
                   {service.buttonText}
                 </button>
               </div>
@@ -88,6 +94,7 @@ export default function ServicesPage() {
           ))}
         </div>
       </div>
+      <Modal isOpen={isModalOpen} onClose={closeModal} />
     </>
   );
 }

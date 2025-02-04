@@ -14,12 +14,12 @@ const Services = () => {
   }, []);
 
   const services = [
-    { title: "Smart Service Setup", description: "", icon: <MdOutlineMiscellaneousServices /> },
-    { title: "Modernisation Of Elevators", description: "", icon: <GiElevator /> },
-    { title: "Varied Service Centers", description: "", icon: <FaRegHandshake />},
-    { title: "Hassle Free Installation", description: "", icon: <GrInstallOption /> },
-    { title: "100% hassle free service plan", description: "", icon: <FaHandHoldingUsd />},
-    { title: "Rescue & Safety Drills", description: "", icon: <MdHealthAndSafety />},
+    { title: "Smart Service Setup", description: "Periodical preventive Maintenance by Highly Trained Field Technicians and quicker customer response", icon: <MdOutlineMiscellaneousServices /> },
+    { title: "Modernisation Of Elevators", description: "Boost your elevator’s reliability, comfort, and appearance and bring it in line with the latest safety.", icon: <GiElevator /> },
+    { title: "Varied Service Centers", description: "Genuine parts from our service centers, stores for our AMC customers. We believe in quality.", icon: <FaRegHandshake />},
+    { title: "Hassle Free Installation", description: "We make sure everything is in place for a smooth, trouble-free elevator installation process.", icon: <GrInstallOption /> },
+    { title: "100% hassle free service plan", description: "Multiple and varied options for annual maintenance and service. We provide an Annual Maintenance Contract", icon: <FaHandHoldingUsd />},
+    { title: "Rescue & Safety Drills", description: "To ensure safe, effective rescue of trapped personnel from elevator we train our personnel for such situations.", icon: <MdHealthAndSafety />},
   ];
 
   return (
