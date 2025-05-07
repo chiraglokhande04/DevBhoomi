@@ -123,6 +123,78 @@ const projects = [
     address: 'D-90, Sector 10, Noida, Uttar Pradesh India (201301)',
     specification: 'ELEVATOR SPECIFICATION-6 Passenger (408kg) 4 Opening HEAVY Capacity ELEVATOR',
     videoSrc: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4'
+  },
+  {
+    title: "Gulmohar Garden",
+    address: "Ambala",
+    specification: "Installation - 2020",
+    videoSrc: "https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4"
+  },
+  {
+    title: "Apna Bazar",
+    address: "Samana",
+    specification: "Installation - 15-03-2022",
+    videoSrc: "https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4"
+  },
+  {
+    title: "Babbar Jewellers",
+    address: "Nabha",
+    specification: "Installation - 20-03-2024 / 01-09-2024",
+    videoSrc: "https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4"
+  },
+  {
+    title: "Surainder Kumar (SE)",
+    address: "Emmar Mohali Hills",
+    specification: "Installation - 01-07-2023",
+    videoSrc: "https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4"
+  },
+  {
+    title: "Col. Vishnu Sharma",
+    address: "Panchkula Sec-4",
+    specification: "Installation - 26-01-2022",
+    videoSrc: "https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4"
+  },
+  {
+    title: "Rekha Gupta",
+    address: "Panchkula Sec-12 A",
+    specification: "Installation - 01-03-2024",
+    videoSrc: "https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4"
+  },
+  {
+    title: "Munish Gupta",
+    address: "Panchkula Sec-16",
+    specification: "Installation - 15-09-2024",
+    videoSrc: "https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4"
+  },
+  {
+    title: "Gunek Singh",
+    address: "Panchkula Sec-12 A",
+    specification: "Installation - 01-06-2023",
+    videoSrc: "https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4"
+  },
+  {
+    title: "Paruthi Ji",
+    address: "Sector 79 Mohali",
+    specification: "Installation - 26-06-2023",
+    videoSrc: "https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4"
+  },
+  {
+    title: "IPS Punjab",
+    address: "Wave Estate Sec-85 Mohali",
+    specification: "Installation - 20-03-2024",
+    videoSrc: "https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4"
+  },
+  {
+    title: "Prem Nath Saapra",
+    address: "Sec-15 Chandighar",
+    specification: "Installation - 13-03-2025",
+    videoSrc: "https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4"
+  },
+  {
+    title: "Sandeep Sethi",
+    address: "Phase 10 Mohali",
+    specification: "Installation - 09-04-2024",
+    videoSrc: "https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4"
   }
 ];
 

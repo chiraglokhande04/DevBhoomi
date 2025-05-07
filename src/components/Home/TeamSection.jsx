@@ -8,12 +8,8 @@ const TeamSection = () => {
   }, []);
 
   const teamMembers = [
-    { id: 1, name: "John Doe", image: "https://devbhoomielevator.com/wp-content/uploads/2024/03/team-1.png" },
-    { id: 2, name: "Jane Smith", image: "/path-to-image2.jpg" },
-    { id: 3, name: "Amanpreet Singh", image: "/path-to-image3.jpg" },
-    { id: 4, name: "Michael Scott", image: "/path-to-image4.jpg" },
-    { id: 5, name: "Dwight Schrute", image: "/path-to-image5.jpg" },
-    { id: 6, name: "Pam Beesly", image: "/path-to-image6.jpg" },
+    { id: 1, name: "CP Tyagi", image: "https://devbhoomielevator.com/wp-content/uploads/2024/03/team-1.png" },
+  
   ];
 
   return (
