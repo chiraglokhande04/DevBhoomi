@@ -12,96 +12,87 @@ const projects = [
   { name: 'Loram maintenance', logo: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/3.png',design:"Interior Design", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus" },
   { name: 'Loram maintenance', logo: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/4.png',design:"Furniture Design", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus" },
   { name: 'Loram maintenance', logo: 'https://via.placeholder.com/100',design:'Home Decor', description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus" },
-  {
-    name: "Homi Baba",
-    logo: "",
-    design: "Kone",
-    description: "Located in Mullapur, Chandighar with 13 units."
-  },
-  {
-    name: "Punjab Police Officer Inst.",
-    logo: "",
-    design: "Kone",
-    description: "Situated at Sec-32, Chandighar with 1 unit."
-  },
-  {
-    name: "Nirvana Greens",
-    logo: "",
-    design: "Kone",
-    description: "Located in Kharar with 7 units."
-  },
-  {
-    name: "Dupar Hospital",
-    logo: "",
-    design: "Hudaffson",
-    description: "Located in Zirakpur with 1 unit."
-  },
-  {
-    name: "4 Season",
-    logo: "",
-    design: "Kone",
-    description: "Located in Mohali, Plot-114 with 1 unit."
-  },
-  {
-    name: "Dial 112",
-    logo: "",
-    design: "Kone",
-    description: "Located in Sec-3, Panchkula with 3 units."
-  },
-  {
-    name: "Civil Hospital",
-    logo: "",
-    design: "Kone",
-    description: "Located in Kharar with 2 units."
-  },
-  {
-    name: "Navjot Singh",
-    logo: "",
-    design: "Johnson",
-    description: "Located in Gharuan with 1 unit."
-  },
-  {
-    name: "Col. Vishnu Sharma",
-    logo: "",
-    design: "Kone",
-    description: "Located in Panchkula, Sec-4 with 1 unit."
-  },
-  {
-    name: "Hotel K.K",
-    logo: "",
-    design: "Hydraulic",
-    description: "Located in Chandigarh, Manimajra with 1 unit."
-  },
-  {
-    name: "Paras Downtown",
-    logo: "",
-    design: "Hudaffson",
-    description: "Located in Zirakpur with 1 unit."
-  },
-  {
-    name: "Gulati Bhawan",
-    logo: "",
-    design: "Kone",
-    description: "Located in Panchkula, Sec-16 with 1 unit."
-  },
-  {
-    name: "Neeraj Bhalla",
-    logo: "",
-    design: "Hudaffson",
-    description: "Located in Kharar, opposite Radha Swami with 1 unit."
-  },
-  {
-    name: "Prabhu Bhawan",
-    logo: "",
-    design: "Hudaffson",
-    description: "Located in Mohali, Sec-91 with 1 unit."
-  },
-  {
-    name: "Shiv Mandir",
-    logo: "",
-    design: "Hudaffson",
-    description: "Located in Panchkula, Sec-12A with 1 unit."
-  }
+  
+    {
+      name: "Homi Baba",
+      logo: "",
+      design: "Kone",
+      description: "Located in Mullapur, Chandigarh with 13 units."
+    },
+    {
+      name: "Punjab Police Officer Inst.",
+      logo: "",
+      design: "Kone",
+      description: "Located in Sec-32, Chandigarh with 1 unit."
+    },
+    {
+      name: "Nirvana Greens",
+      logo: "",
+      design: "Kone",
+      description: "Located in Kharar with 7 units."
+    },
+    {
+      name: "Dupar Hospital",
+      logo: "",
+      design: "Hudaffson",
+      description: "Located in Zirakpur with 1 unit."
+    },
+    {
+      name: "4 Season",
+      logo: "",
+      design: "Kone",
+      description: "Located in Mohali, Plot-114 with 1 unit."
+    },
+    {
+      name: "Dial 112",
+      logo: "",
+      design: "Kone",
+      description: "Located in Sec-3, Panchkula with 3 units."
+    },
+    {
+      name: "Dolfin Tower",
+      logo: "",
+      design: "Shindler",
+      description: "Located in Sec-79, Mohali with 6 units."
+    },
+    {
+      name: "Hotel Canday",
+      logo: "",
+      design: "Shindler",
+      description: "Located in Mohali with 1 unit."
+    },
+    {
+      name: "Hotel Kannview",
+      logo: "",
+      design: "Shindler",
+      description: "Located in Mohali with 1 unit."
+    },
+    {
+      name: "Hotel Sky View",
+      logo: "",
+      design: "INVT",
+      description: "Located in Zirakpur with 1 unit."
+    },
+    {
+      name: "Repu Diwaan",
+      logo: "",
+      design: "Filbrick",
+      description: "Located in Panchkula, Sec-15 with 1 unit."
+    },
+    {
+      name: "Hotel The Spades",
+      logo: "",
+      design: "Jonson",
+      description: "Located in Zirakpur with 1 unit."
+    },
+    {
+      name: "KK Garments",
+      logo: "",
+      design: "Monarch",
+      description: "Located in Chandigarh with 1 unit."
+    }
+  
+  
 ];
 
 export default function MaintenanceProjects() {

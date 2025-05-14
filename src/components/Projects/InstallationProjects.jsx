@@ -124,78 +124,148 @@ const projects = [
     specification: 'ELEVATOR SPECIFICATION-6 Passenger (408kg) 4 Opening HEAVY Capacity ELEVATOR',
     videoSrc: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4'
   },
-  {
-    title: "Gulmohar Garden",
-    address: "Ambala",
-    specification: "Installation - 2020",
-    videoSrc: "https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4"
-  },
-  {
-    title: "Apna Bazar",
-    address: "Samana",
-    specification: "Installation - 15-03-2022",
-    videoSrc: "https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4"
-  },
-  {
-    title: "Babbar Jewellers",
-    address: "Nabha",
-    specification: "Installation - 20-03-2024 / 01-09-2024",
-    videoSrc: "https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4"
-  },
-  {
-    title: "Surainder Kumar (SE)",
-    address: "Emmar Mohali Hills",
-    specification: "Installation - 01-07-2023",
-    videoSrc: "https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4"
-  },
-  {
-    title: "Col. Vishnu Sharma",
-    address: "Panchkula Sec-4",
-    specification: "Installation - 26-01-2022",
-    videoSrc: "https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4"
-  },
-  {
-    title: "Rekha Gupta",
-    address: "Panchkula Sec-12 A",
-    specification: "Installation - 01-03-2024",
-    videoSrc: "https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4"
-  },
-  {
-    title: "Munish Gupta",
-    address: "Panchkula Sec-16",
-    specification: "Installation - 15-09-2024",
-    videoSrc: "https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4"
-  },
-  {
-    title: "Gunek Singh",
-    address: "Panchkula Sec-12 A",
-    specification: "Installation - 01-06-2023",
-    videoSrc: "https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4"
-  },
-  {
-    title: "Paruthi Ji",
-    address: "Sector 79 Mohali",
-    specification: "Installation - 26-06-2023",
-    videoSrc: "https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4"
-  },
-  {
-    title: "IPS Punjab",
-    address: "Wave Estate Sec-85 Mohali",
-    specification: "Installation - 20-03-2024",
-    videoSrc: "https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4"
-  },
-  {
-    title: "Prem Nath Saapra",
-    address: "Sec-15 Chandighar",
-    specification: "Installation - 13-03-2025",
-    videoSrc: "https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4"
-  },
-  {
-    title: "Sandeep Sethi",
-    address: "Phase 10 Mohali",
-    specification: "Installation - 09-04-2024",
-    videoSrc: "https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4"
-  }
+    {
+      title: "Gulmohar Garden",
+      subtitle: "Ambala Installation",
+      address: "Ambala",
+      specification: "Installation 2020",
+      videoSrc: ""
+    },
+    {
+      title: "Apna Bazar Samana",
+      subtitle: "Samana Installation",
+      address: "Samana",
+      specification: "Installation 15-03-2022",
+      videoSrc: ""
+    },
+    {
+      title: "Babbar Jewellers Nabha",
+      subtitle: "Nabha Installation",
+      address: "Nabha",
+      specification: "Installation 20-03-2024/01-09-2024",
+      videoSrc: ""
+    },
+    {
+      title: "Surainder Kumar (SE) Emmar Mohali Hills",
+      subtitle: "Mohali Hills Installation",
+      address: "Emmar Mohali Hills",
+      specification: "Installation 01-07-2023",
+      videoSrc: ""
+    },
+    {
+      title: "Col. Vishnu Sharma",
+      subtitle: "Panchkula Installation",
+      address: "Panchkula Sec-4",
+      specification: "Installation 26-01-2022",
+      videoSrc: ""
+    },
+    {
+      title: "Rekha Gupta",
+      subtitle: "Panchkula Installation",
+      address: "Panchkula Sec-12 A",
+      specification: "Installation 01-03-2024",
+      videoSrc: ""
+    },
+    {
+      title: "Munish Gupta",
+      subtitle: "Panchkula Installation",
+      address: "Panchkula sec-16",
+      specification: "Installation 15-09-2024",
+      videoSrc: ""
+    },
+    {
+      title: "Gunek Singh",
+      subtitle: "Panchukula Installation",
+      address: "Panchukula sec-12 A",
+      specification: "Installation 01-06-2023",
+      videoSrc: ""
+    },
+    {
+      title: "Paruthi Ji",
+      subtitle: "Mohali Installation",
+      address: "Sector 79 Mohali",
+      specification: "Installation 26-06-2023",
+      videoSrc: ""
+    },
+    {
+      title: "IPS Punjab Wave state",
+      subtitle: "Mohali Installation",
+      address: "Sec-85 Mohali",
+      specification: "Installation 20-03-2024",
+      videoSrc: ""
+    },
+    {
+      title: "Prem Nath Saapra",
+      subtitle: "Chandighar Installation",
+      address: "Sec-15 Chandighar",
+      specification: "Installation 13-03-2025",
+      videoSrc: ""
+    },
+    {
+      title: "Sandeep Sethi",
+      subtitle: "Mohali Installation",
+      address: "phase 10 mohali",
+      specification: "Installation 09-04-2024",
+      videoSrc: ""
+    },
+    {
+      title: "Hotel KK",
+      subtitle: "Chandighar Installation",
+      address: "Chandighar sec-43",
+      specification: "Installation 01-09-2024",
+      videoSrc: ""
+    },
+    {
+      title: "A S Bal",
+      subtitle: "Chandighar Installation",
+      address: "Chandighar sec-33",
+      specification: "Installation 01-11-2023",
+      videoSrc: ""
+    },
+    {
+      title: "Devinder Singh",
+      subtitle: "aerocity Installation",
+      address: "aerocity",
+      specification: "Installation 01-05-2022",
+      videoSrc: ""
+    },
+    {
+      title: "Hotel Ambience",
+      subtitle: "zirakpur Installation",
+      address: "zirakpur",
+      specification: "Installation 10-04-2025",
+      videoSrc: ""
+    },
+    {
+      title: "Barwachi Dehradun",
+      subtitle: "Dehradun Installation",
+      address: "Dehradun",
+      specification: "Installation 01-07-2023",
+      videoSrc: ""
+    },
+    {
+      title: "Burbon Meerut",
+      subtitle: "Meerut Installation",
+      address: "Meerut",
+      specification: "Installation 01-06-2022",
+      videoSrc: ""
+    },
+    {
+      title: "Hotel Shivansh INN",
+      subtitle: "Rishikesh Installation",
+      address: "Rishikesh",
+      specification: "Installation 2020",
+      videoSrc: ""
+    },
+    {
+      title: "Hotel Green INN",
+      subtitle: "Rishikesh Installation",
+      address: "Rishikesh",
+      specification: "Installation 2020",
+      videoSrc: ""
+    }
+  
+  
 ];
 
 
