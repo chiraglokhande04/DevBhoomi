@@ -18,7 +18,13 @@ export default function ProjectFlipCard({ project, index }) {
         transition={{ duration: 0.6 }}
         style={{ backfaceVisibility: "hidden" }}
       >
-        <img src={project.logo} alt={project.name} className="h-40 w-40 object-contain " />
+        {project.logo ? (
+          <img src={`/logo/${project.logo}`} alt={project.name} className="h-40 w-40 object-contain " />
+        ) : (
+          <div className="h-40 w-40 flex items-center justify-center text-xl font-bold">
+            {project.name}
+          </div>
+        )}
         <h4 className="text-[16px] ">{project.name}</h4>
       </motion.div>
 

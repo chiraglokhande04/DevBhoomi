@@ -4,30 +4,30 @@ import 'aos/dist/aos.css';
 import ProjectFlipCard from './ProjectFlipCard';
 
 const projects = [
-  { name: 'Punjab Police Officer Institute', logo: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/5.png' ,design:"Architecture", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus"},
-  { name: 'Loram maintenance', logo: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/10.png' ,design:"Interior Design", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus"},
-  { name: 'VISION INDIA GROUP', logo: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/11.png' ,design:"Furniture Design", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus"},
-  { name: 'Loram maintenance', logo: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/image-2.png' ,design:'Home Decor', description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus"},
-  { name: 'Loram maintenance', logo: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/images-2.png',design:"Architecture", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus" },
-  { name: 'Loram maintenance', logo: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/3.png',design:"Interior Design", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus" },
-  { name: 'Loram maintenance', logo: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/4.png',design:"Furniture Design", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus" },
-  { name: 'Loram maintenance', logo: 'https://via.placeholder.com/100',design:'Home Decor', description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus" },
+  // { name: 'Punjab Police Officer Institute', logo: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/5.png' ,design:"Architecture", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus"},
+  // { name: 'Loram maintenance', logo: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/10.png' ,design:"Interior Design", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus"},
+  // { name: 'VISION INDIA GROUP', logo: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/11.png' ,design:"Furniture Design", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus"},
+  // { name: 'Loram maintenance', logo: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/image-2.png' ,design:'Home Decor', description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus"},
+  // { name: 'Loram maintenance', logo: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/images-2.png',design:"Architecture", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus" },
+  // { name: 'Loram maintenance', logo: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/3.png',design:"Interior Design", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus" },
+  // { name: 'Loram maintenance', logo: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/4.png',design:"Furniture Design", description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus" },
+  // { name: 'Loram maintenance', logo: 'https://via.placeholder.com/100',design:'Home Decor', description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus" },
   
     {
       name: "Homi Baba",
-      logo: "",
+      logo: "Homi_bhabha.jpeg",
       design: "Kone",
       description: "Located in Mullapur, Chandigarh with 13 units."
     },
     {
       name: "Punjab Police Officer Inst.",
-      logo: "",
+      logo: "punjab_police.jpeg",
       design: "Kone",
       description: "Located in Sec-32, Chandigarh with 1 unit."
     },
     {
       name: "Nirvana Greens",
-      logo: "",
+      logo: "nirwana_greens.jpeg",
       design: "Kone",
       description: "Located in Kharar with 7 units."
     },
@@ -39,13 +39,13 @@ const projects = [
     },
     {
       name: "4 Season",
-      logo: "",
+      logo: "four_seasons.jpeg",
       design: "Kone",
       description: "Located in Mohali, Plot-114 with 1 unit."
     },
     {
       name: "Dial 112",
-      logo: "",
+      logo: "dial_112.jpeg",
       design: "Kone",
       description: "Located in Sec-3, Panchkula with 3 units."
     },
@@ -63,13 +63,13 @@ const projects = [
     },
     {
       name: "Hotel Kannview",
-      logo: "",
+      logo: "hotel_kenview.jpeg",
       design: "Shindler",
       description: "Located in Mohali with 1 unit."
     },
     {
       name: "Hotel Sky View",
-      logo: "",
+      logo: "skyview_hotel.jpeg",
       design: "INVT",
       description: "Located in Zirakpur with 1 unit."
     },
@@ -81,13 +81,13 @@ const projects = [
     },
     {
       name: "Hotel The Spades",
-      logo: "",
+      logo: "The_spade.jpeg",
       design: "Jonson",
       description: "Located in Zirakpur with 1 unit."
     },
     {
       name: "KK Garments",
-      logo: "",
+      logo: "kk_apparel.jpeg",
       design: "Monarch",
       description: "Located in Chandigarh with 1 unit."
     }
