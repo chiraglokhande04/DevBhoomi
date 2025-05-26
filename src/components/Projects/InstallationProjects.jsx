@@ -125,20 +125,6 @@ const projects = [
     videoSrc: ''
   },
     {
-      title: "Gulmohar Garden",
-      subtitle: "Ambala Installation",
-      address: "Ambala",
-      specification: "Installation 2020",
-      videoSrc: ""
-    },
-    {
-      title: "Apna Bazar Samana",
-      subtitle: "Samana Installation",
-      address: "Samana",
-      specification: "Installation 15-03-2022",
-      videoSrc: ""
-    },
-    {
       title: "Babbar Jewellers Nabha",
       subtitle: "Nabha Installation",
       address: "Nabha",
