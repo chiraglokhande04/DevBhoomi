@@ -2,127 +2,134 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 
+import phase10 from '../../assets/10 phase mohali.mp4';
+import sector12 from '../../assets/sector 12 panchkula.mp4';
+import sector79 from '../../assets/sector 79 mohali.mp4';
+import sector15 from '../../assets/sector 15 chandigarh.mp4'; 
+import sector32 from '../../assets/sector 32 b chandigarh.mp4';
+import sector52 from '../../assets/sector 52 chandigarh.mp4';
+
 const projects = [
   {
     title: 'IPS OFFICER ARPIT SHUKLA',
     subtitle: 'Punjab: Senior IPS Officer DGP Rank',
     address: 'Sector 85 Wave Estate Mohali Punjab 140308',
     specification: 'ELEVATOR SPECIFICATION-6 Passenger (408kg) 3 Opening HEAVY Capacity ELEVATOR',
-    videoSrc: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4'
+    videoSrc: ''
   },
   {
     title: 'APNA BAZAAR',
     address: '553X+8JR, Tehsil Road, Anand Colony, Waraich Colony, Samana, Punjab India 147101',
     specification: 'ELEVATOR SPECIFICATION-STRUCTURE 6 Passenger (408kg) 5 Opening HEAVY Capacity ELEVATOR',
-    videoSrc: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4'
+    videoSrc: ''
   },
   {
     title: 'TRS HOSPITALITY GULMOHAR GARDEN AND RESORT',
     address: '40 km Ambala chandigarh, Highway, Ambala, Haryana India 134007',
     specification: 'ELEVATOR SPECIFICATION-STRUCTURE 6 Passenger (408kg) 2 Opening HEAVY Capacity ELEVATOR',
-    videoSrc: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4'
+    videoSrc: ''
   },
   {
     title: 'Captain Vishnu Sharma (ARMY RETD.)',
     address: 'House Number 878 sector 4 panchkula Haryana India 134112',
     specification: 'ELEVATOR SPECIFICATION-STRUCTURE 6 Passenger (408kg) 3 Opening HEAVY Capacity ELEVATOR',
-    videoSrc: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4'
+    videoSrc: ''
   },
   {
     title: 'Devinder Singh Director at PIPL Developers (Real Estate)',
     address: ' House No. 3100 Block D Aerocity Mohali Punjab India 140603',
     specification: 'ELEVATOR SPECIFICATION-6 Passenger (408kg) 4 Opening HEAVY Capacity ELEVATOR',
-    videoSrc: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4'
+    videoSrc: ''
   },
   {
     title: 'Rekha Gupta Retd. Principal (Secondary Education Govt. of Haryana)',
     address: 'House No. 993 Sector 12A Panchkula Haryana India 134112',
     specification: 'ELEVATOR SPECIFICATION-6 Passenger (408kg) 5 Opening HEAVY Capacity ELEVATOR',
-    videoSrc: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4'
+    videoSrc: ''
   },
   {
     title: 'Er. Surinder Kumar Executive Engineer. Electricity "OP" Division No.3',
     address: 'MLU 221 Sector 109 EMAAR Mohali Hills Punjab India (140501)',
     specification: 'ELEVATOR SPECIFICATION-6 Passenger (408kg) 3 Opening HEAVY Capacity ELEVATOR',
-    videoSrc: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4'
+    videoSrc: ''
   },
   {
     title: 'Mr. Maninder Owner Satluj Senior Secondary School',
     address: 'Satluj Colony, Kishangarh Road, Shahabad, Haryana India 136135',
     specification: 'ELEVATOR SPECIFICATION-STRUCTURE 6 Passenger (408kg) 3 Opening HEAVY Capacity ELEVATOR',
-    videoSrc: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4'
+    videoSrc: ''
   },
   {
     title: 'Mr. Gurnek Singh',
     address: 'House No. 939AP26 Sector 12A Panchkula Haryana India 134112',
     specification: 'ELEVATOR SPECIFICATION-6 Passenger (408kg) 4 Opening HEAVY Capacity ELEVATOR',
-    videoSrc: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4'
+    videoSrc: sector12
   },
   {
     title: 'BOURBON |BAR AND LOUNGE| Prop Shakti',
     address: '2nd floor, Ganesh Plaza, near Vishal mega Mart, Radha Garden, Ganga Nagar, Meerut, Uttar Pradesh 250001',
     specification: 'ELEVATOR SPECIFICATION-6 Passenger (408kg) 3 Opening HEAVY Capacity ELEVATOR',
-    videoSrc: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4'
+    videoSrc: ''
   },
   {
     title: 'Mr. K.S. Chahal Representative Indusviva',
     address: '754 Sector 79 Mohali Punjab India (140603)',
     specification: 'ELEVATOR SPECIFICATION-6 Passenger (408kg) 3 Opening HEAVY Capacity ELEVATOR',
-    videoSrc: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4'
+    videoSrc: ''
   },
   {
     title: 'Mr. Sandeep Sethi',
     address: 'Phase 10 Mohali Punjab India (140603)',
     specification: 'ELEVATOR SPECIFICATION-6 Passenger (408kg) 3 Opening HEAVY Capacity ELEVATOR',
-    videoSrc: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4'
+    videoSrc: phase10
   },
   {
     title: 'Mr. Amarjeet Gill',
     address: 'Sector 27D Chandigarh',
     specification: 'ELEVATOR SPECIFICATION-6 Passenger (408kg) 3 Opening HEAVY Capacity ELEVATOR',
-    videoSrc: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4'
+    videoSrc: ''
   },
   {
     title: 'Mr. A.S. BAL DIRECTOR (FALCON EXPORTS)',
     address: ' House number 561 Sector 33b Chandigarh (160033)',
     specification: 'ELEVATOR SPECIFICATION-8 Passenger (408kg) 3 Opening HEAVY Capacity ELEVATOR',
-    videoSrc: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4'
+    videoSrc: sector32
   },
   {
     title: 'Mr. Rajbir Singh Gill',
     address: 'SCO Number 12&14 Second and Third Floor Sector 115, Khrar Mohali, Punjab , 140501',
     specification: 'ELEVATOR SPECIFICATION-6 Passenger (408kg) 3 Opening HEAVY Capacity ELEVATOR',
-    videoSrc: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4'
+    videoSrc: ''
   },
   {
     title: 'Mr. Rashpal Singh',
     address: 'Mohali 7 PHASE PUNJAB INDIA (140603)',
     specification: 'ELEVATOR SPECIFICATION-8 Passenger (408kg) 4 Opening HEAVY Capacity ELEVATOR',
-    videoSrc: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4'
+    videoSrc: ''
   },
   {
     title: 'Mr. Naresh Kumar PROP Hotel Raati',
     address: ' Near Chitkara, Sector 80, Sahibzada Ajit Singh Nagar, Punjab (140308)',
     specification: 'ELEVATOR SPECIFICATION-6 Passenger (408kg) 8 Opening HEAVY Capacity ELEVATOR',
-    videoSrc: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4'
+    videoSrc: ''
   },
   {
     title: 'Mr. Kapil Gaurav Das Proprietor Bawarchi Restaurant Canal Road',
     address: 'Samvedna Healthcare, Canal Rd, next to A Plus Car Care, Kishanpur, Dehradun, Uttarakhand 248001',
     specification: 'ELEVATOR SPECIFICATION-8 Passenger (408kg) 5 Opening HEAVY Capacity ELEVATOR',
-    videoSrc: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4'
+    videoSrc: ''
   },
   {
     title: 'Mr. ISHU BABBAR & TINKU BABBAR',
     address: ' House number 3 and 4 Hira Enclave is a Locality in Nabha City in Punjab State Haryana his located nearby Location of the Hotel is Guru Nanak Nagar.',
     specification: 'ELEVATOR SPECIFICATION:-  LIFT1 :- 6 Passenger (408kg) 3 Opening HEAVY Capacity ELEVATOR  LIFT2 :- 6 Passenger (408kg) 3 Opening HEAVY Capacity ELEVATOR',
-    videoSrc: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4'
+    videoSrc: ''
   },
   {
     title: 'Mr. MILAN SHARMA OWNER Milan Security Services “A Division of Milan Human Resources Pvt Ltd”(ISO 9001:2015 Certified Company)',
     address: 'D-90, Sector 10, Noida, Uttar Pradesh India (201301)',
     specification: 'ELEVATOR SPECIFICATION-6 Passenger (408kg) 4 Opening HEAVY Capacity ELEVATOR',
-    videoSrc: 'https://devbhoomielevator.com/wp-content/uploads/2024/03/VID-20240216-WA0016-1.mp4'
+    videoSrc: ''
   },
     {
       title: "Gulmohar Garden",
@@ -185,7 +192,7 @@ const projects = [
       subtitle: "Mohali Installation",
       address: "Sector 79 Mohali",
       specification: "Installation 26-06-2023",
-      videoSrc: ""
+      videoSrc: sector79
     },
     {
       title: "IPS Punjab Wave state",
