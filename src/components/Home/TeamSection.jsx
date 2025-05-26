@@ -24,7 +24,7 @@ const TeamSection = () => {
         solutions to our clients.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
+      <div className="flex gap-6 justify-center flex-wrap">
         {teamMembers.map((member, index) => (
           <div
             key={member.id}
@@ -38,7 +38,8 @@ const TeamSection = () => {
               className="w-full h-80 object-cover transition-transform duration-300 group-hover:scale-105"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-60 text-white py-4 text-center text-lg font-semibold translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out">
-              {member.name}
+              {member.name} <br />
+              <span className="text-sm text-gray-400">Founder & CEO</span>
             </div>
           </div>
         ))}
