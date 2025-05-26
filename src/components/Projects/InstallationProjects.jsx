@@ -2,16 +2,9 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS styles
 
-import phase10 from '../../assets/10 phase mohali.mp4';
-import sector12 from '../../assets/sector 12 panchkula.mp4';
-import sector79 from '../../assets/sector 79 mohali.mp4';
-import sector15 from '../../assets/sector 15 chandigarh.mp4'; 
-import sector32 from '../../assets/sector 32 b chandigarh.mp4';
-import sector52 from '../../assets/sector 52 chandigarh.mp4';
-
 const projects = [
   {
-    title: 'IPS OFFICER ARPIT SHUKLA',
+    title: 'IPS OFFICER',
     subtitle: 'Punjab: Senior IPS Officer DGP Rank',
     address: 'Sector 85 Wave Estate Mohali Punjab 140308',
     specification: 'ELEVATOR SPECIFICATION-6 Passenger (408kg) 3 Opening HEAVY Capacity ELEVATOR',
@@ -63,7 +56,7 @@ const projects = [
     title: 'Mr. Gurnek Singh',
     address: 'House No. 939AP26 Sector 12A Panchkula Haryana India 134112',
     specification: 'ELEVATOR SPECIFICATION-6 Passenger (408kg) 4 Opening HEAVY Capacity ELEVATOR',
-    videoSrc: sector12
+    videoSrc: "Sector_12_Panchkula.mp4"
   },
   {
     title: 'BOURBON |BAR AND LOUNGE| Prop Shakti',
@@ -81,7 +74,7 @@ const projects = [
     title: 'Mr. Sandeep Sethi',
     address: 'Phase 10 Mohali Punjab India (140603)',
     specification: 'ELEVATOR SPECIFICATION-6 Passenger (408kg) 3 Opening HEAVY Capacity ELEVATOR',
-    videoSrc: phase10
+    videoSrc: "10 phase mohali.mp4"
   },
   {
     title: 'Mr. Amarjeet Gill',
@@ -93,7 +86,7 @@ const projects = [
     title: 'Mr. A.S. BAL DIRECTOR (FALCON EXPORTS)',
     address: ' House number 561 Sector 33b Chandigarh (160033)',
     specification: 'ELEVATOR SPECIFICATION-8 Passenger (408kg) 3 Opening HEAVY Capacity ELEVATOR',
-    videoSrc: sector32
+    videoSrc: "sector 32 b chandigarh.mp4"
   },
   {
     title: 'Mr. Rajbir Singh Gill',
@@ -192,7 +185,7 @@ const projects = [
       subtitle: "Mohali Installation",
       address: "Sector 79 Mohali",
       specification: "Installation 26-06-2023",
-      videoSrc: sector79
+      videoSrc: "sector 79 mohali.mp4"
     },
     {
       title: "IPS Punjab Wave state",
@@ -275,40 +268,64 @@ const projects = [
   
 ];
 
-
 const InstallationProjects = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,  // Animation duration in ms
-      easing: 'ease-in-out',  // Animation easing
-      once: true,  // Animation runs only once when the element enters the viewport
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
     });
   }, []);
+
+  const projectsWithVideo = projects.filter(project => project.videoSrc);
+  const projectsWithoutVideo = projects.filter(project => !project.videoSrc);
 
   return (
     <div className="bg-white py-8">
       <h2 className="text-center text-blue-400 text-xl font-semibold uppercase">Our Project</h2>
       <h1 className="text-center text-3xl font-bold mb-6">Installation Projects</h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:px-16">
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className="bg-blue-400 rounded-2xl shadow-lg p-4 text-white text-center"
-            data-aos="fade-up"  // Add animation to this div
-            data-aos-delay={`${index * 100}`}  // Optional: delay based on the index to stagger animations
-          >
-            <video autoPlay muted className="w-full h-80 object-cover rounded-md" controls>
-              <source src={project.videoSrc} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+      <div className="mb-12">
+        <h2 className="text-center text-2xl font-bold mb-6">Video Projects</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:px-16">
+          {projectsWithVideo.map((project, index) => (
+            <div
+              key={index}
+              className="bg-blue-400 rounded-2xl shadow-lg p-4 text-white text-center"
+              data-aos="fade-up"
+              data-aos-delay={`${index * 100}`}
+            >
+              <video autoPlay muted className="w-full h-80 object-cover rounded-md" controls>
+                <source src={`/videos/${project.videoSrc}`} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
 
-            <h3 className="text-lg font-bold mt-4">{project.title}</h3>
-            {project.subtitle && <p className="font-medium">{project.subtitle}</p>}
-            <p><strong>Address:</strong> {project.address}</p>
-            <p className="font-semibold mt-2">{project.specification}</p>
-          </div>
-        ))}
+              <h3 className="text-lg font-bold mt-4">{project.title}</h3>
+              {project.subtitle && <p className="font-medium">{project.subtitle}</p>}
+              <p><strong>Address:</strong> {project.address}</p>
+              <p className="font-semibold mt-2">{project.specification}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <h2 className="text-center text-2xl font-bold mb-6">Other Projects</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4 md:px-16">
+          {projectsWithoutVideo.map((project, index) => (
+            <div
+              key={index}
+              className="bg-blue-400 rounded-2xl shadow-lg p-4 text-white text-center"
+              data-aos="fade-up"
+              data-aos-delay={`${index * 100}`}
+            >
+              <h3 className="text-lg font-bold mt-4">{project.title}</h3>
+              {project.subtitle && <p className="font-medium">{project.subtitle}</p>}
+              <p><strong>Address:</strong> {project.address}</p>
+              <p className="font-semibold mt-2">{project.specification}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
