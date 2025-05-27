@@ -125,45 +125,10 @@ const projects = [
     videoSrc: ''
   },
     {
-      title: "Babbar Jewellers Nabha",
-      subtitle: "Nabha Installation",
-      address: "Nabha",
-      specification: "Installation 20-03-2024/01-09-2024",
-      videoSrc: ""
-    },
-    {
-      title: "Surainder Kumar (SE) Emmar Mohali Hills",
-      subtitle: "Mohali Hills Installation",
-      address: "Emmar Mohali Hills",
-      specification: "Installation 01-07-2023",
-      videoSrc: ""
-    },
-    {
-      title: "Col. Vishnu Sharma",
-      subtitle: "Panchkula Installation",
-      address: "Panchkula Sec-4",
-      specification: "Installation 26-01-2022",
-      videoSrc: ""
-    },
-    {
-      title: "Rekha Gupta",
-      subtitle: "Panchkula Installation",
-      address: "Panchkula Sec-12 A",
-      specification: "Installation 01-03-2024",
-      videoSrc: ""
-    },
-    {
       title: "Munish Gupta",
       subtitle: "Panchkula Installation",
       address: "Panchkula sec-16",
       specification: "Installation 15-09-2024",
-      videoSrc: ""
-    },
-    {
-      title: "Gunek Singh",
-      subtitle: "Panchukula Installation",
-      address: "Panchukula sec-12 A",
-      specification: "Installation 01-06-2023",
       videoSrc: ""
     },
     {
@@ -174,13 +139,6 @@ const projects = [
       videoSrc: "sector 79 mohali.mp4"
     },
     {
-      title: "IPS Punjab Wave state",
-      subtitle: "Mohali Installation",
-      address: "Sec-85 Mohali",
-      specification: "Installation 20-03-2024",
-      videoSrc: ""
-    },
-    {
       title: "Prem Nath Saapra",
       subtitle: "Chandighar Installation",
       address: "Sec-15 Chandighar",
@@ -188,31 +146,10 @@ const projects = [
       videoSrc: ""
     },
     {
-      title: "Sandeep Sethi",
-      subtitle: "Mohali Installation",
-      address: "phase 10 mohali",
-      specification: "Installation 09-04-2024",
-      videoSrc: ""
-    },
-    {
       title: "Hotel KK",
       subtitle: "Chandighar Installation",
       address: "Chandighar sec-43",
       specification: "Installation 01-09-2024",
-      videoSrc: ""
-    },
-    {
-      title: "A S Bal",
-      subtitle: "Chandighar Installation",
-      address: "Chandighar sec-33",
-      specification: "Installation 01-11-2023",
-      videoSrc: ""
-    },
-    {
-      title: "Devinder Singh",
-      subtitle: "aerocity Installation",
-      address: "aerocity",
-      specification: "Installation 01-05-2022",
       videoSrc: ""
     },
     {
@@ -227,13 +164,6 @@ const projects = [
       subtitle: "Dehradun Installation",
       address: "Dehradun",
       specification: "Installation 01-07-2023",
-      videoSrc: ""
-    },
-    {
-      title: "Burbon Meerut",
-      subtitle: "Meerut Installation",
-      address: "Meerut",
-      specification: "Installation 01-06-2022",
       videoSrc: ""
     },
     {
