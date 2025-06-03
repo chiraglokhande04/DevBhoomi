@@ -38,7 +38,7 @@ const projects = [
     title: 'Rekha Gupta Retd. Principal (Secondary Education Govt. of Haryana)',
     address: 'House No. 993 Sector 12A Panchkula Haryana India 134112',
     specification: 'ELEVATOR SPECIFICATION-6 Passenger (408kg) 5 Opening HEAVY Capacity ELEVATOR',
-    videoSrc: ''
+    videoSrc: 'Sector_12_Panchkula.mp4'
   },
   {
     title: 'Er. Surinder Kumar Executive Engineer. Electricity "OP" Division No.3',
@@ -56,7 +56,7 @@ const projects = [
     title: 'Mr. Gurnek Singh',
     address: 'House No. 939AP26 Sector 12A Panchkula Haryana India 134112',
     specification: 'ELEVATOR SPECIFICATION-6 Passenger (408kg) 4 Opening HEAVY Capacity ELEVATOR',
-    videoSrc: "Sector_12_Panchkula.mp4"
+    videoSrc: ""
   },
   {
     title: 'BOURBON |BAR AND LOUNGE| Prop Shakti',

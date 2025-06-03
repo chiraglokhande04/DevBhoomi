@@ -24,7 +24,7 @@ const ElevatorHero = () => {
         initial={{ x: "100%", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="mx-8 md:mx-36 flex justify-between items-center px-6 py-6 text-sm"
+        className="mx-8 md:mx-36 justify-between items-center px-6 py-6 text-sm hidden md:flex"
       >
         <div className="flex gap-x-2">
           <TbMailOpened className="text-blue-400 text-xl" />
