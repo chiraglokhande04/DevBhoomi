@@ -109,7 +109,7 @@ export default function MaintenanceProjects() {
       <h3 className="text-center text-blue-400 text-sm uppercase tracking-widest">Our Project</h3>
       <h2 className="text-center text-3xl font-bold text-white mb-8">Maintenance Projects</h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto my-auto place-items-center">
         {projects.map((project, index) => (
          <ProjectFlipCard project={project} index={index} key={index} data-aos="zoom-in" data-aos-delay={index * 100} />
         ))}
