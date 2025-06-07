@@ -7,14 +7,61 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const clients = [
-  { img: "https://devbhoomielevator.com/wp-content/uploads/2024/03/5.png", alt: "Kundanwala Jewels" },
-  { img: "https://devbhoomielevator.com/wp-content/uploads/2024/03/images-2.png", alt: "Punjab Chemicals" },
-  { img: "https://devbhoomielevator.com/wp-content/uploads/2024/03/image-2.png", alt: "Emergency 112" },
-  { img: "https://devbhoomielevator.com/wp-content/uploads/2024/03/11.png", alt: "Police Department" },
-  { img: "https://devbhoomielevator.com/wp-content/uploads/2024/03/10.png", alt: "THDC India Limited" },
-  { img: "https://devbhoomielevator.com/wp-content/uploads/2024/03/8.png", alt: "Regulatory Board" },
-  { img: "https://devbhoomielevator.com/wp-content/uploads/2024/03/4.png", alt: "Vision India Group" },
-  { img: "https://devbhoomielevator.com/wp-content/uploads/2024/03/3.png", alt: "Air Force Naval Housing" },
+  {
+      name: "Homi Baba",
+      logo: "Homi_bhabha.jpeg",
+      design: "Kone",
+      description: "Located in Mullapur, Chandigarh with 13 units."
+    },
+    {
+      name: "Punjab Police Officer Inst.",
+      logo: "punjab_police.jpeg",
+      design: "Kone",
+      description: "Located in Sec-32, Chandigarh with 1 unit."
+    },
+    {
+      name: "Nirvana Greens",
+      logo: "nirwana_greens.jpeg",
+      design: "Kone",
+      description: "Located in Kharar with 7 units."
+    },
+    {
+      name: "4 Season",
+      logo: "four_seasons.jpeg",
+      design: "Kone",
+      description: "Located in Mohali, Plot-114 with 1 unit."
+    },
+    {
+      name: "Dial 112",
+      logo: "dial_112.jpeg",
+      design: "Kone",
+      description: "Located in Sec-3, Panchkula with 3 units."
+    },
+    {
+      name: "Hotel Kannview",
+      logo: "hotel_kenview.jpeg",
+      design: "Shindler",
+      description: "Located in Mohali with 1 unit."
+    },
+    {
+      name: "Hotel Sky View",
+      logo: "skyview_hotel.jpeg",
+      design: "INVT",
+      description: "Located in Zirakpur with 1 unit."
+    },
+    {
+      name: "Hotel The Spades",
+      logo: "The_spade.jpeg",
+      design: "Jonson",
+      description: "Located in Zirakpur with 1 unit."
+    },
+    {
+      name: "KK Garments",
+      logo: "kk_apparel.jpeg",
+      design: "Monarch",
+      description: "Located in Chandigarh with 1 unit."
+    }
+  
 ];
 
 const Clients = () => {
@@ -48,9 +95,10 @@ const Clients = () => {
           modules={[FreeMode, Autoplay]}
           loop={true}
           breakpoints={{
-            320: { slidesPerView: 1, spaceBetween: 2 },
-            480: { slidesPerView: 2, spaceBetween: 3 },
-            640: { slidesPerView: 3, spaceBetween: 2 },
+            0: { slidesPerView: 3, spaceBetween: 10 },
+            360: { slidesPerView: 3, spaceBetween: 10 },
+            480: { slidesPerView: 3, spaceBetween: 10 },
+            640: { slidesPerView: 4, spaceBetween: 10 },
             768: { slidesPerView: 8, spaceBetween: 3 },
             1024: { slidesPerView: 8, spaceBetween: 1 },
             1280: { slidesPerView: 8, spaceBetween: 3 },
@@ -60,12 +108,12 @@ const Clients = () => {
           {clients.map((client, index) => (
             <SwiperSlide key={index} className="flex justify-center">
               <div
-                className="w-20 h-20 sm:w-28 sm:h-28 flex items-center justify-center rounded-xl border-2 border-blue-400  shadow-lg"
+                className="w-24 h-24 sm:w-32 sm:h-32 flex items-center justify-center rounded-xl border-2 border-blue-400  shadow-lg"
                 data-aos="flip-left"
                 data-aos-delay={index * 100}
               >
                 <img
-                  src={client.img}
+                  src={`/logo/${client.logo}`}
                   alt={client.alt}
                   className="w-full h-full object-contain"
                 />
