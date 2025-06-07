@@ -21,7 +21,7 @@ const ServicesHero = () => {
         initial={{ x: "100%", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="mx-36 flex justify-between items-center px-6 py-6 text-sm"
+        className="mx-36 hidden md:flex justify-between items-center px-6 py-6 text-sm"
       >
         <div className="flex gap-x-2">
           <TbMailOpened className="text-blue-400 text-xl" />
