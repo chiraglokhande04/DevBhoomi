@@ -42,7 +42,7 @@ export default function ElevatorComponent() {
         data-aos-delay="200" // Optional: Delay the animation for the image
       >
         <img
-          src="https://devbhoomielevator.com/wp-content/uploads/2024/03/elevator-maintenance-services.webp"
+          src="/content/elevator-maintenance-services.webp"
           alt="Elevator Technician"
           className="rounded-xl shadow-md max-w-full h-auto"
         />

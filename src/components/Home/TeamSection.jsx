@@ -8,7 +8,7 @@ const TeamSection = () => {
   }, []);
 
   const teamMembers = [
-    { id: 1, name: "CP Tyagi", image: "https://devbhoomielevator.com/wp-content/uploads/2024/03/team-1.png" },
+    { id: 1, name: "CP Tyagi", image: "/content/team-1.png" },
   
   ];
 

@@ -10,7 +10,7 @@ const ContactHero = () => {
   return (
     <div className="bg-gray-900 text-white h-[500px]  "
       style={{
-        backgroundImage: "url('https://devbhoomielevator.com/wp-content/uploads/2024/03/2-copy.webp')",
+        backgroundImage: "url('/content/2-copy.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

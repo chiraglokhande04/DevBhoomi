@@ -5,7 +5,7 @@ const StartPage = () => {
   return (
     <div className='flex flex-col items-center justify-center h-screen gap-y-4'>
       <img 
-        src='https://devbhoomielevator.com/wp-content/uploads/2024/03/loader.gif' 
+        src='/content/loader.gif' 
         alt='Loading...' 
         className='w-auto h-auto' 
       />

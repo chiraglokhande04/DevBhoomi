@@ -24,7 +24,7 @@ const Navbar = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <img
-            src="https://devbhoomielevator.com/wp-content/uploads/2024/03/Layer_11_copy.png"
+            src="/content/Layer_11_copy.png"
             alt="Logo"
             className="h-12"
           />

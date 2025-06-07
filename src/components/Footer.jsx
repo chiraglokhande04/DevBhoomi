@@ -8,7 +8,7 @@ const Footer = () => {
       {/* Logo */}
       <div className="flex justify-center mb-4">
         <img
-          src="https://devbhoomielevator.com/wp-content/uploads/2024/03/dev_logo.png"
+          src="/content/dev_logo.png"
           alt="Devbhoomi Elevators"
           className="h-12 sm:h-16 lg:h-20"
         />

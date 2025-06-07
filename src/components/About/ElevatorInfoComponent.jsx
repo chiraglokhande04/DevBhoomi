@@ -19,7 +19,7 @@ const ElevatorInfoComponent = () => {
         data-aos="fade-right" // Add AOS fade-right animation
       >
         <img
-          src="https://devbhoomielevator.com/wp-content/uploads/2024/03/Quality-and-Excellence-in-Elevator-Solutions.webp" 
+          src="/content/Quality-and-Excellence-in-Elevator-Solutions.webp" 
           alt="Elevator Presentation"
           className="rounded-2xl shadow-lg"
         />

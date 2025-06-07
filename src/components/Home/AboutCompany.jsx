@@ -84,7 +84,7 @@ const AboutCompany = () => {
           className="lg:w-3/7"
         >
           <img
-            src="https://devbhoomielevator.com/wp-content/uploads/2024/03/ABOUT-US-1-copy-768x768.webp"
+            src="/content/ABOUT-US-1-copy-768x768.webp"
             alt="Elevator Building"
             className="rounded-lg shadow-lg"
           />

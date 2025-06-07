@@ -59,7 +59,7 @@ const ExperienceTrust = () => {
           {/* Video Section */}
           <div className="w-full lg:w-1/3 relative overflow-hidden" data-aos="fade-left">
             <video autoPlay loop muted className="w-full h-full object-cover">
-              <source src="https://devbhoomielevator.com/wp-content/uploads/2024/03/IMAGE.mp4" type="video/mp4" />
+              <source src="/content/IMAGE.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>

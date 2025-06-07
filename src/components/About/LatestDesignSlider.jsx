@@ -8,13 +8,13 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const images = [
-  'https://devbhoomielevator.com/wp-content/uploads/2024/03/7.webp',
-  'https://devbhoomielevator.com/wp-content/uploads/2024/03/6.webp',
-  'https://devbhoomielevator.com/wp-content/uploads/2024/03/3.webp',
-  'https://devbhoomielevator.com/wp-content/uploads/2024/03/4.webp',
-  'https://devbhoomielevator.com/wp-content/uploads/2024/03/5.webp',
-  'https://devbhoomielevator.com/wp-content/uploads/2024/03/1.webp',
-  'https://devbhoomielevator.com/wp-content/uploads/2024/03/2.webp'
+  '/content/7.webp',
+  '/content/6.webp',
+  '/content/3.webp',
+  '/content/4.webp',
+  '/content/5.webp',
+  '/content/1.webp',
+  '/content/2.webp'
 ];
 
 export default function LatestDesignsSlider() {

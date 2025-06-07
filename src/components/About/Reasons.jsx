@@ -39,7 +39,7 @@ export default function Reasons() {
         data-aos="fade-left" // AOS animation for the image
       >
         <img
-          src="https://devbhoomielevator.com/wp-content/uploads/2024/03/SECTION1.webp"
+          src="/content/SECTION1.webp"
           alt="Elevator Example"
           className="rounded-2xl shadow-lg w-full max-w-xl"
         />

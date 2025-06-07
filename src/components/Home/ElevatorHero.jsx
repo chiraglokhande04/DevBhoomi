@@ -12,7 +12,7 @@ const ElevatorHero = () => {
       className="bg-gray-900 text-white min-h-[600px]"
       style={{
         backgroundImage:
-          "url('https://devbhoomielevator.com/wp-content/uploads/2024/03/2-copy.webp')",
+          "url('/content/2-copy.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
