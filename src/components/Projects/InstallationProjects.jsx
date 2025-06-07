@@ -40,6 +40,7 @@ const projects = [
     specification: 'ELEVATOR SPECIFICATION-6 Passenger (408kg) 5 Opening HEAVY Capacity ELEVATOR',
     videoSrc: 'Sector_12_Panchkula.mp4'
   },
+  
   {
     title: 'Er. Surinder Kumar Executive Engineer. Electricity "OP" Division No.3',
     address: 'MLU 221 Sector 109 EMAAR Mohali Hills Punjab India (140501)',
